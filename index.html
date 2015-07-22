@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="CSS/reset.css">
+	<link rel="stylesheet" href="CSS/main.css">
+	<script src = "JS/main.js"></script>
+</head>
+<body>
+
+	<div id="div_cal">
+		<div id="div_exp">
+			<input type="text" id="in_exp">
+		</div>
+		<div id="div_op">
+			<input type="text" id="in_op">
+		</div>
+		<div id="div_dig">
+			<table>
+				<tr>
+					<td>
+						<input type="button" value="7" id="in_sev" class="in_dig" onclick="chkDigFlag(this.value);">
+					</td>
+					<td>
+						<input type="button" value="8" id="in_eig" class="in_dig" onclick="chkDigFlag(this.value);">
+					</td>
+					<td>
+						<input type="button" value="9" id="in_nin" class="in_dig" onclick="chkDigFlag(this.value);">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" value="4" id="in_for" class="in_dig" onclick="chkDigFlag(this.value);">
+					</td>
+					<td>
+						<input type="button" value="5" id="in_fiv" class="in_dig" onclick="chkDigFlag(this.value);">
+					</td>
+					<td>
+						<input type="button" value="6" id="in_six" class="in_dig" onclick="chkDigFlag(this.value);">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" value="1" id="in_one" class="in_dig" onclick="chkDigFlag(this.value);">
+					</td>
+					<td>
+						<input type="button" value="2" id="in_two" class="in_dig" onclick="chkDigFlag(this.value);">
+					</td>
+					<td>
+						<input type="button" value="3" id="in_thr" class="in_dig" onclick="chkDigFlag(this.value);">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" value="." id="in_dot" class="in_dig" onclick="chkDotFlag();">
+					</td>
+					<td>
+						<input type="button" value="0" id="in_zer" class="in_dig" onclick="chkDigFlag(this.value);">
+					</td>
+					<td>
+						<input type="button" value="=" id="in_equ" class="in_dig" onclick="evalExp();">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="div_sym">
+			<input type="button" id="in_clr" class="in_sym" value="C" onclick="singclr();" ondblclick="dblclr();">
+			<input type="button" id="in_pls" class="in_sym" value="+" onclick="chkSymFlag(this.value);">
+			<input type="button" id="in_min" class="in_sym" value="-" onclick="chkSymFlag(this.value);">
+			<input type="button" id="in_mul" class="in_sym" value="*" onclick="chkSymFlag(this.value);">
+			<input type="button" id="in_div" class="in_sym" value="/" onclick="chkSymFlag(this.value);">
+		</div>
+	</div>
+
+</body>
+</html>

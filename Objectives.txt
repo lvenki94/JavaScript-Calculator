@@ -1,0 +1,18 @@
+Objectives
+
+- Build a basic calculator that performs addition, subtraction, divison and multiplication.
+- Understanding JavaScript, HTML and CSS while building the calculator.
+
+Challenges
+
+- Divison by zero yields infinity, which should be shown by the symbol '∞'.
+- Insertion of a single decimal point for a number.
+- Insertion of only a single operator between two numbers.
+- Negetive number support
+- Mapping Keybords Inputs
+
+Unsolved
+
+- Double clicking = sign gives a NaN output.
+- Keyboard mapping.
+- Clearing does not take care of inserting a decimal or symbol.
